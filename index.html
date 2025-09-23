@@ -4,78 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riddhi Kathe | Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 2rem;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-top: 0;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Riddhi Kathe</h1>
-    <p>Computer Science Student | Student | Mentor</p>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-inner">
+      <div class="logo">RK</div>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="intro">
+    <div class="intro-content">
+      <h1>Hi, I’m <span class="highlight">Riddhi Kathe</span>.</h1>
+      <p>A Computer Science student at UMass Lowell exploring web development, game dev, and AI.</p>
+      <div class="intro-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+      </div>
+    </div>
   </header>
 
-  <section>
-    <h2>Welcome to My Portfolio</h2>
-    <p>Hi! I'm Riddhi, a CS student at UMass Lowell. I love learning about new tech, getting new experiences, and exploring game development.</p>
-    <p>Check out my <a href="https://github.com/Rak2060?tab=repositories" target="_blank">GitHub</a> for projects and contributions.</p>
-  </section>
-
+  <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project1">
-      <h3>Beat Rush 🎵</h3>
-      <p>Built at HackMIT 2025 using AI-generated music (Suno API) and beat mapping with Librosa. Hosted with Node.js & HTML5.</p>
-      <a href="https://github.com/victoriiz/hackmit_music" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project2">
-      <h3>Adding Soon...</h3>
-      <p>[Description]</p>
-      <a href="https://github.com/Rak2060?tab=repositories" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project3">
-      <h3>Adding Soon...</h3>
-      <p>[Description]</p>
-      <a href="https://github.com/Rak2060?tab=repositories" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+    <div class="project-grid">
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-card">Coming soon: Code in Place Section Leader</div>
+      <!-- Beat Rush project -->
+      <article class="project-card">
+        <img src="assets/beat-rush.png" alt="Beat Rush Screenshot" class="project-img" />
+        <h3>Beat Rush — HackMIT 2025</h3>
+        <p>A music rhythm game built in 24 hours using Suno API, Librosa, HTML/JS, and Micro:bit hardware integration.</p>
+        <a href="https://github.com/Rak2060" target="_blank">View on GitHub</a>
+      </article>
+
+      <!-- Placeholder project -->
+      <article class="project-card">
+        <div class="project-img placeholder">Coming soon</div>
+        <h3>Project Coming Soon</h3>
+        <p>Another exciting project is in progress. Stay tuned!</p>
+      </article>
+
+    </div>
   </section>
 
   <section id="skills">
