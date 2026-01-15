@@ -1,82 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Riddhi Kathe | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-  <link rel="stylesheet" href="style.css">
+    <!-- Favicon links -->
+    <link rel="icon" href="assets/favicons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link href="fonts.googleapis.com" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav>
-    <div class="nav-inner">
-      <div class="logo">RK</div>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.html">Resume</a></li>
-      </ul>
-    </div>
-  </nav>
-  <header class="intro">
-    <div class="intro-content">
-      <h1>Hi, I’m <span class="highlight">Riddhi Kathe</span>.</h1>
-      <p>A Computer Science student at UMass Lowell exploring web development, game dev, and AI.</p>
-      <div class="intro-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-      </div>
-    </div>
-  </header>
+    <header class = "navbar">
+        <nav class = "nav">
+            <a class="icon" href="#home" aria-label="Home">
+                <img class = "icon-img" src="assets/favicon/favicon-32x32.png" alt=""/>
+                <span class="icon-name">Riddhi Kathe</span>
+            </a>
+            <div class="nav-links" aria-label="Primary">
+                <a class = "nav-link is-active" href="#home">Home</a>
+                <a class = "nav-link" href = "about.html">About</a>
+            </div>
+        </nav>
+    </header>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
+    <main>
+        <section id="home" class="intro">
+            <div class="intro-inner">
+                <h1 class="intro-title">
+                    <span>Hello,</span>
+                    <span>World.</span>
+                </h1>
+                <p class="intro-text">
+                    Riddhi here, I'm currently exploring my interests as a developer.
+                </p>
+                <button class="scroll-button" id= "scrolltoWork" aria-label="Scroll Down">
+                    <span class="arrow">↓</span>
+                </button>
+            </div>
+        </section>
 
-      <!-- Beat Rush project -->
-      <article class="project-card">
-        <img src="assets/beat-rush.png" alt="Beat Rush Screenshot" class="project-img" />
-        <h3>Beat Rush — HackMIT 2025</h3>
-        <p>A music rhythm game built in 24 hours using Suno API, Librosa, HTML/JS, and Micro:bit hardware integration.</p>
-        <a href="https://github.com/Rak2060" target="_blank">View on GitHub</a>
-      </article>
+        <footer class="footer-section">
+            <div class="footer-inner">
+                <div class="footer-icon">
+                    <img class = "icon-img" src="assets/favicon/favicon-32x32.png" alt=""/>
+                    <span class="icon-name">Riddhi Kathe</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">My Work</a>
+                    <a href="https://github.com/Rak2060" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/riddhikathe/" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="#" target="_blank" rel="noreferrer">Resume</a>
+                </div>
+                <div class="footer-note">
+                    Thank you. 🤍
+                </div>
+            </div>
+        </footer>
+    </main>
 
-      <!-- Placeholder project -->
-      <article class="project-card">
-        <div class="project-img placeholder">Coming soon</div>
-        <h3>Project Coming Soon</h3>
-        <p>Another exciting project is in progress. Stay tuned!</p>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><b>Programming Languages:</b> Python, C, C++, OpenCV, HTML, Java</li>
-      <li><b>Tools:</b> Git, GitHub, Linux, VS Code, Visual Studio</li>
-      <li><b>Soft Skills:</b> Professional fluency in English, Teamwork, Problem-solving</li>
-    </ul>
-  </section>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>I'm a curious and creative CS student at UMass Lowell, passionate about making tech accessible and fun. I love mentoring, building games, and exploring new ideas.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:riddhi.m.kathe@gmail.com">riddhi.m.kathe@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/riddhikathe/" target="_blank">linkedin.com/in/riddhikathe/</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Riddhi Kathe</p>
-    <p><a href="https://github.com/Rak2060" target="_blank">GitHub</a></p>
-  </footer>
+    <script src="script.js"></script> 
 </body>
 </html>
